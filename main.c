@@ -3,6 +3,13 @@
 #include <stdlib.h>
 #include "worker.h"
 
+/*
+	main.c
+	Question 1 of coding challenge
+	Ash Mulekar
+	amulekar@gmail.com
+	May 13, 2014
+*/
 
 
 uint8_t*  createTestBuffer()
@@ -20,13 +27,11 @@ uint8_t*  createTestBuffer()
 int main()
 {
 	uint8_t *buff = createTestBuffer();
-	for (int i=0; i < 14/*sizeof(buff)*/; i++)
+	for (int i=0; i < 14; i++)
 	{
 		printf("[%d], value=%d\n",i, buff[i]);						
 	}
-
 	handleReport(buff,  14);
-	
 	free(buff);
     return 0;
 }

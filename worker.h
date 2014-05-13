@@ -1,3 +1,10 @@
+/*
+	worker.h
+	Question 1 of coding challenge
+	Ash Mulekar
+	amulekar@gmail.com
+	May 13, 2014
+*/
 
 
 uint16_t getMouseDx(uint8_t *buff);
